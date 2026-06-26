@@ -10,7 +10,7 @@ const Hero = () => {
   {/* Badge */}
   <div className="flex items-center gap-2 rounded-full border font-inter border-[#45464C4D] px-4 py-2 text-xs sm:text-sm font-medium text-white">
     <Zap size={16} className="text-[#22D3EE] font-inter" />
-    HIGH-PERFORMANCE ENGINEERING
+    HIGH-PERFORMANCE ENGINEERING to
   </div>
 
   {/* Heading */}
