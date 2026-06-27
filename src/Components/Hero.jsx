@@ -1,5 +1,6 @@
 
 import { ArrowRight, Zap  } from "lucide-react";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section className="bg-[#051424]">
@@ -32,14 +33,20 @@ const Hero = () => {
   {/* Buttons */}
   <div className="mt-10 flex w-full flex-col sm:flex-row items-center justify-center gap-4">
 
-    <button className="group flex w-full font-inter sm:w-auto items-center justify-center gap-2 rounded-xl bg-[#22D3EE] px-6 py-4 font-semibold text-[#0B1120] transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_0_35px_rgba(34,211,238,0.45)] active:scale-95">
+    <a  href="https://wa.me/917082892696?text=Hi%20LiteHunt,%20I%20want%20to%20start%20my%20project."
+  target="_blank"
+  rel="noopener noreferrer">
+      <button className="group flex w-full font-inter sm:w-auto items-center justify-center gap-2 rounded-xl bg-[#22D3EE] px-6 py-4 font-semibold text-[#0B1120] transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_0_35px_rgba(34,211,238,0.45)] active:scale-95">
       Start a Project
       <ArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
     </button>
+    </a>
 
+    <Link to="/portfolio">
     <button className="group flex w-full font-inter sm:w-auto items-center justify-center gap-2 rounded-xl border border-[#22D3EE]/40 px-6 py-4 font-semibold text-[#D4E4FA] transition-all duration-300 hover:-translate-y-1 hover:border-[#22D3EE] hover:bg-[#22D3EE]/10 hover:text-white hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] active:scale-95">
       View Portfolio
     </button>
+    </Link>
 
   </div>
 </div>

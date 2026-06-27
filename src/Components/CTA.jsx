@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
 return ( <section className="bg-[#06131F] py-24"> <div className="max-w-[1140px] mx-auto px-4">
@@ -19,6 +20,7 @@ return ( <section className="bg-[#06131F] py-24"> <div className="max-w-[1140px]
 
       {/* Button */}
       <div className="mt-12">
+        <Link to="/contact">
         <button className="group inline-flex items-center gap-3 rounded-xl bg-[#22D3EE] px-8 py-4 font-semibold text-[#06131F] transition-all duration-300 font-inter hover:-translate-y-1 hover:scale-105 hover:shadow-[0_0_35px_rgba(34,211,238,0.45)] active:scale-95">
 
           Schedule a Consultation
@@ -29,6 +31,7 @@ return ( <section className="bg-[#06131F] py-24"> <div className="max-w-[1140px]
           />
 
         </button>
+        </Link>
       </div>
 
     </div>
